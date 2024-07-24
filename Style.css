@@ -1,0 +1,92 @@
+#header{
+    display: flex;
+    Align-items: centre;
+    justify-content: space-between;
+    padding: 20px 80px; /*top botton, left right*/
+    background-color: rgb(228, 230, 231);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position:sticky;/* make navbar stick on one postition*/
+    top:0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:600;
+    color: #1a1a1a;
+    transition:0.3s ease;
+}
+#navbar li a:hover{
+    color: #088178;
+}
+
+/* for page icon higlight */
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+
+#navbar li a.active::after,/*pseudo classes*/
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4x;
+    left:20px;
+
+}
+
+/*Home page */
+#hero{
+    background-image:url("img/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size:cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+
+}
+#hero h1{
+    color:#088178;
+}
+#hero button{
+    background-image:url("img/button.png");
+    background-color: transparent;
+    color:#088178;
+    border:0;
+    padding:14px 80px 14px 65px;  /* for button is not showing proper*/
+    background-repeat:no-repeat;
+    cursor:pointer;
+    font-weight:700px;
+    font-size:15px;
+}
+/*feature section*/
+
+
+
+
